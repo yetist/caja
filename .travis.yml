@@ -101,9 +101,10 @@ requires:
     - shared-mime-info
 
 # Uncomment the following lines to get more compile warnings
-#variables:
-#  - CFLAGS="-Wall"
+variables:
+  - CFLAGS="-Wall -DEEL_OMIT_SELF_CHECK"
 
 # NOTE: `make distcheck` will fail in an environment without X display
-#after_scripts:
+after_scripts:
+  - make distcheck
 #  - if [ `systemd-detect-virt` != "kvm" -a "$BUILD_TYPE" == "autotools" ]; then make distcheck;fi
