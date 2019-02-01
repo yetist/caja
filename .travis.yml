@@ -101,7 +101,7 @@ requires:
     - shared-mime-info
 
 variables:
-  - CFLAGS="-Wall -DEEL_OMIT_SELF_CHECK"
+  - CFLAGS="-Wall -DEEL_OMIT_SELF_CHECK -DCAJA_OMIT_SELF_CHECK"
 
 after_scripts:
   - make distcheck
