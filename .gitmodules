@@ -1,0 +1,4 @@
+[submodule "libegg"]
+	path = libegg
+	url = https://github.com/yetist/libegg.git
+	branch = caja
